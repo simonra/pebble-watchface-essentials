@@ -1,0 +1,33 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Randby.net",
+    "enableMultiJS": true,
+    "longName": "Essentials - ISO and week numbers",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/basalt_thumbnail_icon",
+                "menuIcon": true,
+                "name": "basalt_thumbnail_icon",
+                "targetPlatforms": null,
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Essentials",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "1a81a4eb-dadb-403c-ba96-c6f144d0ccb3",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
