@@ -43,7 +43,7 @@ static void update_time(struct tm* tick_time, TimeUnits units_changed){
   
   // Set the week number:
   static char week_buffer[] = "W52";
-  strftime(week_buffer, sizeof(week_buffer), "W%W", tick_time);
+  strftime(week_buffer, sizeof(week_buffer), "W%V", tick_time);
   text_layer_set_text(s_week_number_layer, week_buffer);
 }
 
