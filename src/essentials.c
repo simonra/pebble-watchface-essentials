@@ -11,7 +11,7 @@ static TextLayer *s_connection_layer;
 static Layer *s_my_top_line_layer;
 
 static void handle_battery(BatteryChargeState charge_state) {
-  static char battery_text[] = "100%";
+  static char battery_text[] = "??%";
 
   if (charge_state.is_charging) {
     snprintf(battery_text, sizeof(battery_text), "chrg");
@@ -96,7 +96,7 @@ static void main_window_load(Window *window) {
   text_layer_set_text_color(s_battery_layer, GColorWhite);
   text_layer_set_background_color(s_battery_layer, GColorClear);
   
-  text_layer_set_text(s_battery_layer, "100%");
+  text_layer_set_text(s_battery_layer, "??%");
 
   s_weekday_layer = text_layer_create(GRect(0, 40, bounds.size.w, 34));
   text_layer_set_text_color(s_weekday_layer, GColorWhite);
